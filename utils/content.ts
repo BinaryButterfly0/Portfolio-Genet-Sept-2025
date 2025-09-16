@@ -111,7 +111,7 @@ export const WORK = {
     },
     {
       name: "Network Analysis with Wireshark",
-      live_demo: "#",
+      live_demo: "https://github.com/BinaryButterfly0/Network-Analysis-using-Wireshark",
       description: "This lab focuses on network analysis using Wireshark, with an emphasis on TLS (Transport Layer Security) traffic. Students will explore how TLS secures data over the network, understand the handshake process, and examine key metadata such as server names, certificate details, TLS versions, and cipher suites. By analyzing TLS traffic, students gain practical skills in identifying outdated protocols, suspicious certificates, and potential misuse of encrypted channels, enhancing their ability to monitor and secure network communications effectively.",
       thumbnails: "NA.png",
       type: "Home Lab",
@@ -125,13 +125,35 @@ export const WORK = {
       type: "Home Lab",
     },
     {
+      name: "Detecting Suspicious PowerShell Activity and managing Firewall rules",
+      live_demo: "#",
+      description:
+        "Coming Soon",
+      thumbnails: "ps.png",
+      type: "Home Lab",
+    },
+
+    {
       name: "Coming Soon",
       live_demo: "#",
       description:
         "Coming Soon",
-      thumbnails: "SEIM.png",
+      thumbnails: "wazuh.png",
       type: "Home Lab",
     },
+
+    {
+      name: "Coming Soon",
+      live_demo: "#",
+      description:
+        "Coming Soon",
+      thumbnails: "COMING.png",
+      type: "Home Lab",
+    },
+    
+
+    
+
     
   ],
 };
