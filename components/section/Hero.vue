@@ -31,7 +31,7 @@
 
       <div class="flex gap-4 items-center mt-8">
         <Button label="View Work" to="#work" />
-        <Button label="Contact Me" to="#contact" variant="btn-dark" />
+        <Button label="Contact Me" to="https://www.linkedin.com/in/genet-shibru-eshetu/" variant="btn-dark" />
         <!-- <Button 
   :label="HERO.resumeButton.label"
   :href="HERO.resumeButton.href"

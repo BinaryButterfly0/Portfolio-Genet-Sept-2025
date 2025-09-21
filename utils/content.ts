@@ -125,29 +125,20 @@ export const WORK = {
       type: "Home Lab",
     },
     {
-      name: "Detecting Suspicious PowerShell Activity and managing Firewall rules",
-      live_demo: "#",
+      name: "Identifying Vulnerabilities in Network",
+      live_demo: "https://github.com/BinaryButterfly0/Identifying-Vulnerabilities-in-Network",
       description:
-        "Coming Soon",
-      thumbnails: "ps.png",
+        "This repo documents a hands-on lab for performing a basic network security assessment (host discovery, port/service scanning, traffic capture, vulnerability scanning, web assessment, and controlled exploitation) in an isolated VMware environment.",
+      thumbnails: "INV.png",
       type: "Home Lab",
     },
 
     {
-      name: "Coming Soon",
+      name: "Suricata IDS and Wazuh",
       live_demo: "#",
       description:
-        "Coming Soon",
+        "To be deployed soon",
       thumbnails: "wazuh.png",
-      type: "Home Lab",
-    },
-
-    {
-      name: "Coming Soon",
-      live_demo: "#",
-      description:
-        "Coming Soon",
-      thumbnails: "COMING.png",
       type: "Home Lab",
     },
     

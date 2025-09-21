@@ -20,7 +20,7 @@
         <Button
           class="mt-8"
           label="Connect Me"
-          to="#contact"
+          to="https://www.linkedin.com/in/genet-shibru-eshetu/"
           variant="btn-dark"
         />
       </div>
