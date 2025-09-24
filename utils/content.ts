@@ -44,7 +44,7 @@ export const HERO = {
     },
     {
       icon: "/images/IoLogoTwitter.svg",
-      url: "https://x.com/shibru_gen49167?s=21",
+      url: "https://x.com/Genet_Shibrux",
     },
     
     
