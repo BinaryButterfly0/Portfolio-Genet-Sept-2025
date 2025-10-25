@@ -101,6 +101,15 @@ export const WORK = {
   subline:
     "I specialize in crafting user-centered solutions for businesses and individuals. Let’s create something extraordinary together.",
   works: [
+     {
+      name: "SOC Tier 1 Lab – 70-Day Implementation 8 Projects",
+      live_demo: "https://github.com/BinaryButterfly0/SOC-Tier-1-Lab-Implementation-Report-70-Day-Practical-Journey-",
+      description: "This SOC Tier 1 Lab project documents the hands-on implementation of a complete security monitoring environment over 70 days. It is organized into 8 distinct projects, covering SOC setup, SIEM and IDS integration, threat hunting, incident response, and dashboard reporting, providing a full end-to-end SOC workflow.",
+      
+      thumbnails: "70.png",
+      type: "Home Lab",
+    },
+   
     {
       name: "SOC Log Analysis with Splunk",
       live_demo: "https://github.com/BinaryButterfly0/SOC-Log-Analysis-with-Splunk",
