@@ -29,11 +29,11 @@ export const PROFILE = {
 
 export const HERO = {
   badge: "Available for freelance",
-  headline: `👋Ahoy, I’m ${PROFILE.firstname}`,
+  headline: `Hi, I’m ${PROFILE.firstname} ${PROFILE.lastname}`,
   subline:
-    "Aspiring SOC Analyst passionate about hunting threats, securing systems, and keeping the digital world safe",
+    "Cyber Security Specialist | SOC Lab Enthusiast  Passionate about building defensive labs and mastering Security Operations. I bridge the gap between complex technical threats and robust business defense.",
   socialIcons: [
-    { icon: "/images/loLofoTelegram.svg", url: "https://t.me/parahez" },
+    { icon: "/images/loLofoTelegram.svg", url: "https://t.me/CyberLoopX" },
     {
       icon: "/images/IoLogoLinkedin.svg",
       url: "https://www.linkedin.com/in/genet-shibru-eshetu/",
@@ -42,19 +42,20 @@ export const HERO = {
       icon: "/images/IoLogoGithub.svg",
       url: "https://github.com/BinaryButterfly0",
     },
+
     {
-      icon: "/images/IoLogoTwitter.svg",
-      url: "https://x.com/Genet_Shibrux",
-    },
+  name: "Email",
+  icon: "/images/gmail.png", // Suggest renaming icon if possible
+  url: "mailto:genetshibru0@gmail.com?subject=Inquiry from Portfolio - Security Analyst",
+}
     
-    
-  ],
+  ], 
   resumeButton: {
-    label: "Download My Resume",
-    href: "/Genet Shibru CV April.pdf",
-    download: true,
-    variant: "btn-dark",
-  },
+  label: "Download My Resume",
+  href: "/cv.pdf",
+  download: true,
+  variant: "btn-dark",
+},
   
 };
 export const SERVICE = {
@@ -87,14 +88,6 @@ export const SERVICE = {
   ],
 };
 
-
-
-
-
-
-
-
-
 export const WORK = {
   label: "work",
   headline: "Custom design solutions for your requirements.",
@@ -102,58 +95,69 @@ export const WORK = {
     "I specialize in crafting user-centered solutions for businesses and individuals. Let’s create something extraordinary together.",
   works: [
      {
-      name: "SOC Tier 1 Lab – 70-Day Implementation 8 Projects",
-      live_demo: "https://github.com/BinaryButterfly0/SOC-Tier-1-Lab-Implementation-Report-70-Day-Practical-Journey-",
-      description: "This SOC Tier 1 Lab project documents the hands-on implementation of a complete security monitoring environment over 70 days. It is organized into 8 distinct projects, covering SOC setup, SIEM and IDS integration, threat hunting, incident response, and dashboard reporting, providing a full end-to-end SOC workflow.",
-      
-      thumbnails: "70.png",
+      name: "Deploying & Testing Microsoft Defender for Endpoint",
+      live_demo: "https://genetshibru.medium.com/deploying-testing-microsoft-defender-for-endpoint-8ed1e131671e",
+      description:"Deployed a multi-node Azure environment and onboarded assets into Microsoft Defender for Endpoint using EDR in Block Mode. I validated the security posture by executing a PowerShell-based attack simulation successfully triggering and analyzing real-time alerts in the Defender XDR portal.",
+
+      thumbnails: "EDR.png",
       type: "Home Lab",
     },
+
+    {
+      name: "SaaS API Security Risk Assessment (OWASP Top 10)",
+      live_demo: "https://www.linkedin.com/posts/genet-shibru-eshetu_api-security-risk-analysis-hands-on-assessment-activity-7429873838437396480-mrgM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEODtksBXEC1SlypGGS1JqPMaBB9pfB0w-E",
+      description:"Conducted a 'Black Box' security audit of a REST API using the OWASP API Security Top 10 framework to identify critical vulnerabilities. I discovered and documented high-risk flaws, including Broken Object Level Authorization (BOLA) and Excessive Data Exposure (PII leakage) of sensitive user coordinates and emails. I concluded the project by delivering a comprehensive remediation strategy, including JWT authentication implementation and DTO-based data filtering to mitigate risks of massive data breaches.",
+      thumbnails: "API.jpg",
+      type: "Home Lab",
+    },
+    
    
+    {
+      name: "Incident Response Report: Data Exfiltration via Backdoor",
+      live_demo: "https://medium.com/@genetshibru/%EF%B8%8F-incident-response-report-data-exfiltration-via-backdoor-f9bcb4b04b2d",
+      description: "Investigated a critical backdoor compromise and data exfiltration incident using Security Onion (Sguil, Wireshark, Kibana). I reconstructed the attacker’s commands to confirm root-level access and identified the unauthorized theft of sensitive files through deep packet inspection. By capturing digital fingerprints (MD5/SHA1 hashes) of the stolen data, I provided 100% forensic proof of the breach. I concluded the lab by detailing critical remediation steps, including host isolation, system hardening, and credential resets.",
+      
+      thumbnails: "Data exfiltration report with Captain Root-Beard.png",
+      type: "Home Lab",
+    },
+    
     {
       name: "SOC Log Analysis with Splunk",
       live_demo: "https://github.com/BinaryButterfly0/SOC-Log-Analysis-with-Splunk",
       description:
         "This project focuses on log analysis and threat detection using Splunk, a leading platform for searching, monitoring, and analyzing machine-generated data. The logs are systematically categorized based on server types—including Windows, Linux, and Web servers—and protocols such as DNS, HTTP, SSH, and Zeek. By organizing logs in this way, the project enables efficient monitoring, correlation of events, and rapid detection of anomalies or security incidents across diverse IT environments. This structured approach helps security analysts gain actionable insights and maintain robust system security.",
-      thumbnails: "LA.png",
+      thumbnails: "splunk-1.png",
       type: "Home Lab",
     },
+    {
+      name:"Automated Server Hardening with Fail2Ban",
+      live_demo: "https://medium.com/@genetshibru/securing-ssh-on-aws-ubuntu-with-fail2ban-a-beginners-hands-on-lab-841024858cbb",
+      description:"Implemented automated intrusion prevention on AWS Ubuntu using Fail2Ban to mitigate SSH brute-force attacks. I configured custom jail policies and monitored system logs to dynamically block malicious IPs via iptables. This project demonstrates my expertise in server hardening and proactive defense for cloud-based infrastructure.",
+      thumbnails: "Automated Server Hardening with Fail2Ban.jpg",
+      type: "Home Lab",
+    },
+
     {
       name: "Network Analysis with Wireshark",
       live_demo: "https://github.com/BinaryButterfly0/Network-Analysis-using-Wireshark",
-      description: "This lab focuses on network analysis using Wireshark, with an emphasis on TLS (Transport Layer Security) traffic. Students will explore how TLS secures data over the network, understand the handshake process, and examine key metadata such as server names, certificate details, TLS versions, and cipher suites. By analyzing TLS traffic, students gain practical skills in identifying outdated protocols, suspicious certificates, and potential misuse of encrypted channels, enhancing their ability to monitor and secure network communications effectively.",
-      thumbnails: "NA.png",
-      type: "Home Lab",
-    },
-    {
-      name: "Incident Response",
-      live_demo: "#",
-      description:
-        "This lab focuses on incident detection, analysis, and response in a Windows environment. It covers the incident response lifecycle—from identifying suspicious activity and detecting threats, to containing, eradicating, and recovering from incidents. Detection involves monitoring logs and alerts for anomalies such as failed logins, malware execution, or unauthorized access. Threats are analyzed by correlating events, identifying attacker behavior, and determining the scope of compromise. All findings are logged and documented to support reporting, forensic analysis, and improving security measures.",
-      thumbnails: "IR.png",
+      description: "Conducted deep packet inspection and network forensic analysis using Wireshark and TCPDump. I specialized in protocol dissection and TCP stream reconstruction to identify network anomalies and potential security threats.This project highlights my ability to troubleshoot complex connectivity issues and monitor high-volume network traffic for security compliance",
+      thumbnails: "wireshark.jpg",
       type: "Home Lab",
     },
     {
       name: "Identifying Vulnerabilities in Network",
       live_demo: "https://github.com/BinaryButterfly0/Identifying-Vulnerabilities-in-Network",
-      description:
-        "This repo documents a hands-on lab for performing a basic network security assessment (host discovery, port/service scanning, traffic capture, vulnerability scanning, web assessment, and controlled exploitation) in an isolated VMware environment.",
-      thumbnails: "INV.png",
+      description: "Performed comprehensive network reconnaissance and vulnerability assessments using Nmap and Zenmap. I specialized in service version detection and used the Nmap Scripting Engine (NSE) to identify high-risk security gaps and misconfigured ports. This project demonstrates my ability to proactively secure infrastructure by identifying potential attack vectors and recommending hardening strategies.",
+      thumbnails: "nmap and wireshark.jpg",
       type: "Home Lab",
     },
-
     {
-      name: "Suricata IDS and Wazuh",
-      live_demo: "#",
-      description:
-        "To be deployed soon",
-      thumbnails: "wazuh.png",
+      name: "Cyber Threat Intelligence (CTI) & Malware Analysis",
+      live_demo: "https://medium.com/@genetshibru/threat-intelligence-report-eabcb8844e55",
+      description: "Developed a strategic intelligence report identifying emerging threats and Living off the Land (LotL) techniques to enhance organizational detection and response capabilities.",
+      thumbnails: "Threat Intelligence Report.jpg",
       type: "Home Lab",
     },
-    
-
-    
-
     
   ],
 };
@@ -161,9 +165,10 @@ export const WORK = {
 export const ABOUT = {
   label: "Let me introduce my self",
   introduce: [
-    `My name is ${PROFILE.fullname}, I work in IT and I’m deeply passionate about cybersecurity, with a special focus on building and exploring home labs 
-    around Security Operations Center (SOC) practices. I enjoy continuously learning, experimenting with security tools, and strengthening my skills to better understand 
-    threats and defenses.`,
+    `My name is ${PROFILE.fullname},
+    I am a Technical Cybersecurity Pre-Sales professional and Computer Science honors graduate  dedicated to defending digital infrastructure. By day, I design secure architectures and translate complex threats into business solutions. 
+   
+    By night, I am a SOC Lab Enthusiast, hardening systems and conducting deep-dive threat analysis..`,
 
     "Always eager to collaborate and grow, I’m committed to building a strong path in cybersecurity!",
   ],

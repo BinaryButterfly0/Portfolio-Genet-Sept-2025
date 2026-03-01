@@ -31,14 +31,17 @@
 
       <div class="flex gap-4 items-center mt-8">
         <Button label="View Work" to="#work" />
-        <Button label="Contact Me" to="https://www.linkedin.com/in/genet-shibru-eshetu/" variant="btn-dark" />
+        <Button
+          label="Contact Me"
+          to="https://www.linkedin.com/in/genet-shibru-eshetu/"
+          variant="btn-dark"
+        />
         <!-- <Button 
   :label="HERO.resumeButton.label"
   :href="HERO.resumeButton.href"
   :download="HERO.resumeButton.download"
   :variant="HERO.resumeButton.variant"
 /> -->
-
       </div>
     </div>
 
@@ -60,11 +63,7 @@
           />
         </li>
 
-        <li
-          v-for="item in WORK.works"
-          class="overflow-hidden group"
-          aria-hidden="true"
-        >
+        <li v-for="item in WORK.works" class="overflow-hidden group" aria-hidden="true">
           <img
             class="h-[300px] rounded-xl group-hover:scale-105 group-hover:opacity-70 transition-all"
             :src="'/images/work/' + item.thumbnails"
@@ -79,30 +78,12 @@
     <div class="absolute top-0 left-0 w-screen h-screen index-bg">
       <div class="h-0">
         <div class="star"></div>
-        <div
-          class="star"
-          style="top: 80px; left: 800px; animation-delay: 3s"
-        ></div>
-        <div
-          class="star"
-          style="top: 40px; left: 646px; animation-delay: 2s"
-        ></div>
-        <div
-          class="star"
-          style="top: 120px; left: 395px; animation-delay: 4s"
-        ></div>
-        <div
-          class="star"
-          style="top: 160px; left: 765px; animation-delay: 1s"
-        ></div>
-        <div
-          class="star"
-          style="top: 170px; left: 1200px; animation-delay: 2s"
-        ></div>
-        <div
-          class="star"
-          style="top: 200px; left: 1000px; animation-delay: 1s"
-        ></div>
+        <div class="star" style="top: 80px; left: 800px; animation-delay: 3s"></div>
+        <div class="star" style="top: 40px; left: 646px; animation-delay: 2s"></div>
+        <div class="star" style="top: 120px; left: 395px; animation-delay: 4s"></div>
+        <div class="star" style="top: 160px; left: 765px; animation-delay: 1s"></div>
+        <div class="star" style="top: 170px; left: 1200px; animation-delay: 2s"></div>
+        <div class="star" style="top: 200px; left: 1000px; animation-delay: 1s"></div>
       </div>
     </div>
   </div>
@@ -183,8 +164,7 @@
   position: relative;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-animation: star-opacity 5s infinite ease-in,
-    star-pos 5s infinite ease-in;
+  -webkit-animation: star-opacity 5s infinite ease-in, star-pos 5s infinite ease-in;
   animation: star-opacity 5s infinite ease-in, star-pos 5s infinite ease-in;
   -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);

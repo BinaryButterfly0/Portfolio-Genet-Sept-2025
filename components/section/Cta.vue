@@ -25,13 +25,7 @@
             </a>
           </div>
 
-          <Button
-            class="mt-10"
-            variant="btn-primary"
-            label="Start Securing"
-            disabled
-          />
-          
+          <Button class="mt-10" variant="btn-primary" label="Start Securing" disabled />
 
           <div
             class="my-8 w-4/5 h-[1px] bg-gradient-to-r from-white/0 via-white/20 to-white/0"
@@ -61,10 +55,8 @@
 
         <p class="text-sm text-white/30 text-center mt-8">
           &copy; Copyright
-          <NuxtLink to="htt" target="_blank"
-            >Genet Shibru Built with ❤️
-          </NuxtLink>
-          2025
+          <NuxtLink to="htt" target="_blank">Genet Shibru Built with ❤️ </NuxtLink>
+          2026
         </p>
 
         <div
